@@ -35,22 +35,28 @@ Pizza.prototype.calculate = function() {
     this.toppings.forEach(topping => {
         sum += topping.price;
     });
-    return sum
-}
+    return "$" + sum.toFixed(2);
+};
+
+// jQuery starts here
+
 $(function() {
+    $("#order").click(function() {
+       
+        // get checked size
+        var idChecked = $("input[name='size']:checked").val();
+        var sizeChecked = allSizes[idChecked];
 
-    
+        // get checked toppings
+        var checkedToppings = [];
+        $("input[name='topping']:checked").each(function() {
+            var id = $(this).val();
+            checkedToppings.push(allToppings[id]);
+        });
 
+        var pizza = new Pizza(sizeChecked, checkedToppings);
 
+        alert(pizza.calculate());
 
-
-
-
-
-
-
-
-
-
-
+    })
 });
