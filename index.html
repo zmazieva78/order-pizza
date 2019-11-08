@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/scripts.js"></script>
+        <title>Healthy Pizza</title>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1>Healthy Pizza</h1>
+            <p>Order custom pizza with ingredients from local farmers </p>
+        </div>
+        
+        <div class="container">
+            <div class="media">
+                <img src="..." class="align-self-start mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Our Story</h5>
+                    <p>Out ingredients come from local farmers.</p>
+                    <p>Every vegitable has been hand selected for freshness to have the best taste.</p>
+                    <p>Meats are also coming from our national meat makers and has been produced in USA</p>
+                </div>
+            </div>
+
+            <!-- modal goes here -->
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">Order Pizza here</button>
+
+            <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <h4>Pizza Size</h4>
+                        <div class="radio">
+                            <label><input type="radio" name="small" value="1" checked>Small</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="medium" value="2">Medium</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="large" value="3">Large</label>
+                        </div>
+
+                        <h4>Ingredients</h4>
+                        <h5>Cheese</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="parmesan">
+                            <label class="form-check-label" for="parmesan">Parmesan Cheese</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="mozzarella">
+                            <label class="form-check-label" for="mozzarella">Mozzarella Cheese</label>
+                        </div>
+                        <h5>Meats</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="pepperoni">
+                            <label class="form-check-label" for="pepperoni">Pepperoni</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="sausage">
+                            <label class="form-check-label" for="sausage">Intalian Sausage</label>
+                        </div>
+                        <h5>Veggies</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="tomatoes">
+                            <label class="form-check-label" for="tomatoes">Tomatoes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="pepers">
+                            <label class="form-check-label" for="pepers">Green Bell Pepers</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="onions">
+                            <label class="form-check-label" for="onions">Onions</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="mushrooms">
+                            <label class="form-check-label" for="mushrooms">Mushrooms</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="olives">
+                            <label class="form-check-label" for="olives">Olives</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="spinach">
+                            <label class="form-check-label" for="spinach">Spinach</label>
+                        </div>
+                        <button class="btn btn-primary">Order total</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
