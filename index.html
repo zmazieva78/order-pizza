@@ -11,14 +11,18 @@
     <body>
         <div class="jumbotron">
             <h1>Healthy Pizza</h1>
-            <p>Order custom pizza with ingredients from local farmers </p>
+            <blockquote class="blockquote-reverse">
+                <p>Order custom pizza with ingredients from local farmers </p>
+                <footer><cite>Your Farmers</cite></footer>
+            </blockquote>
+            
         </div>
         
         <div class="container">
             <div class="media">
-                <img src="..." class="align-self-start mr-3" alt="...">
+                <img id="mediaPic" src="./img/pizza.jpeg" class="align-self-start mr-3" style="width:250px; height:auto" alt="Picture of Spinach pizza">
                 <div class="media-body">
-                    <h5 class="mt-0">Our Story</h5>
+                    <h3 class="mt-0">Our Story</h3>
                     <p>Out ingredients come from local farmers.</p>
                     <p>Every vegitable has been hand selected for freshness to have the best taste.</p>
                     <p>Meats are also coming from our national meat makers and has been produced in USA</p>
@@ -27,20 +31,29 @@
 
             <!-- modal goes here -->
 
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">Order Pizza here</button>
+            <button id="startModal" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">Order Pizza here</button>
 
             <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
-                        <h4>Pizza Size</h4>
-                        <div class="radio">
-                            <label><input type="radio" name="small" value="1" checked>Small</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="medium" value="2">Medium</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="large" value="3">Large</label>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div id="sizes">
+                                    <h4>Pizza Size</h4>
+                                    <div class="radio">
+                                        <label><input type="radio" name="small" value="1" checked>Small</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="medium" value="2">Medium</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="large" value="3">Large</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- <img id="choices" src="./img/sizes.png" alt="Picture of Pizza sizes" style="width:250px; height:auto"> -->
+                            </div>
                         </div>
 
                         <h4>Ingredients</h4>
@@ -87,7 +100,7 @@
                             <input class="form-check-input" type="checkbox" value="" id="spinach">
                             <label class="form-check-label" for="spinach">Spinach</label>
                         </div>
-                        <button class="btn btn-primary">Order total</button>
+                        <button id="order" class="btn btn-primary">Order total</button>
                     </div>
                 </div>
             </div>

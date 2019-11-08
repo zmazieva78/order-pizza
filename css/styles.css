@@ -1,3 +1,25 @@
 .modal-content {
-    padding: 20px;;
+    padding: 20px;
+    background-image: url("../img/board.jpg");
+    background-size: cover;
+}
+.jumbotron {
+    background-image: url("../img/farm.jpg");
+    background-size: cover;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkgreen;
+}
+#mediaPic {
+    float: left;
+}
+.media-body {
+    padding-left: 25px;
+}
+#startModal, #order {
+    display:block;
+    margin: 0 auto;
+}
+#choices {
+    padding-top: 25px;
 }
