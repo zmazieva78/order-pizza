@@ -25,8 +25,8 @@ _The website for a pizza company where a user can choose one or more individual 
 
 ### My work
 
-```[Click here]( https://zmazieva78.github.io/order-pizza/.)```to see my website in action
+[Click here](https://zmazieva78.github.io/order-pizza/.) to see my website in action
 
 
-Copyright (c) 2019 MIT _Zarina Mazieva_
+```Copyright (c) 2019 MIT _Zarina Mazieva_```
 
