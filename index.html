@@ -20,13 +20,23 @@
         
         <div class="container">
             <div class="media">
-                <img id="mediaPic" src="./img/pizza.jpeg" class="align-self-start mr-3" style="width:250px; height:auto" alt="Picture of Spinach pizza">
-                <div class="media-body">
-                    <h3 class="mt-0">Our Story</h3>
-                    <p>Organic and Sustainable to Our Roots</p>
-                    <p>Every vegitable has been hand selected for freshness to have the best taste. From the beginning, our farmers embraced organic and sustainable agriculture as a way of life, an art, a dedication to care for our land, our employees, our natural habitats and our food system. They carefully select produce varieties that grow well in our area and taste great. Try our pizzas.</p>
-                    <p>Meats are also coming from our national meat makers and has been produced in USA</p>
+                <div class="intorduction">
+                    <img id="mediaPic" src="./img/pizza.jpeg" class="align-self-start mr-3" style="width:250px; height:auto" alt="Picture of Spinach pizza">
+                    <div class="media-body">
+                        <h3 class="mt-0">Our Story</h3>
+                        <p>Organic and Sustainable to Our Roots</p>
+                        <p>Every vegitable has been hand selected for freshness to have the best taste. From the beginning, our farmers embraced organic and sustainable agriculture as a way of life, an art, a dedication to care for our land, our employees, our natural habitats and our food system. They carefully select produce varieties that grow well in our area and taste great. Try our pizzas.</p>
+                        <p>Meats are also coming from our national meat makers and has been produced in USA</p>
+                    </div>
                 </div>
+
+                <div class="orderResult">
+                    <img id="mediaPic" src="./img/baked_pizza.gif" class="align-self-start mr-3" style="width:250px; height:auto" alt="Picture of baked pizza">
+                    <div class="media-body">
+                        <h3 class="mt-0">Your total for this order:</h3>
+                        <p class="orderTotal"> </p>
+                    </div>
+                 </div>
             </div>
 
             <!-- modal goes here -->
@@ -91,7 +101,7 @@
                             <input class="form-check-input" type="checkbox" name="topping" value="9" id="spinach">
                             <label class="form-check-label" for="spinach">Spinach</label>
                         </div>
-                        <button id="order" class="btn btn-primary">Order total</button>
+                        <button id="order" type="button" class="btn btn-secondary" data-dismiss="modal">Order Total</button>
                     </div>
                 </div>
             </div>

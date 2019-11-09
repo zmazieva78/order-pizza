@@ -56,7 +56,8 @@ $(function() {
 
         var pizza = new Pizza(sizeChecked, checkedToppings);
 
-        alert(pizza.calculate());
-
+        $(".orderTotal").html(pizza.calculate());
+        $(".intorduction").hide();
+        $(".orderResult").show();
     })
 });
